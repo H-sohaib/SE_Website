@@ -13,6 +13,20 @@ class PfeTypeSeeder extends Seeder
      */
     public function run(): void
     {
+        // $pfe_types = [
+        //     [
+        //         'type_name' => 'Arduino',
+        //     ],
+        //     [
+        //         'type_name' => 'Web',
+        //     ],
+        //     [
+        //         'type_name' => 'AI',
+        //     ],
+        //     [
+        //         'type_name' => 'ESP32',
+        //     ],
+        // ];
         $pfe_types = [
             [
                 'type_name' => 'Arduino',
@@ -20,18 +34,7 @@ class PfeTypeSeeder extends Seeder
             [
                 'type_name' => 'Web',
             ],
-            [
-                'type_name' => 'AI',
-            ],
-            [
-                'type_name' => 'ESP32',
-            ],
         ];
-        // $pfe_types = [
-        //     [
-        //         'type_name' => 'Arduino',
-        //     ],
-        // ];
 
         foreach ($pfe_types as $key => $pfe_type) {
             PfeType::create($pfe_type);
