@@ -55,7 +55,7 @@
         <div class="container" data-aos="zoom-out" data-aos-delay="100">
             <h2 class="fw-bold">L'École Supérieure de Technologie de Fès offre</h2>
             <h1>La filière DUT<span> Systèmes Embarqués (SE)</span></h1>
-            <h2 class="fw-bold">Département Génie Électrique et Informatique (GE & INFO)</h2>
+            <h2 class="fw-bold">Département Génie Électrique & Systèmes Intelligents</h2>
         </div>
     </section><!-- End Hero -->
 
@@ -206,180 +206,62 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                {{-- semestre 1  --}}
-                                <div>
-                                    <tr>
-                                        <td class="" rowspan="11">Semestre 1
-                                        </td>
-                                        <td rowspan="3">M1</td>
-                                        <td rowspan="3">LANGUES ET TEC</td>
-                                        <td>Technique d'expression et de Communication</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Francais</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Anglais</td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="3">M2</td>
-                                        <td rowspan="3">ELECTRONIQUE ANALOGIQUE ET
-                                            NUMERIQUE
-                                        </td>
-                                        <td>Circuit Electriques</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Electronique Analogique</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Electronique Numérique</td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="2">M3</td>
-                                        <td rowspan="2">MATHEMATIQUES
-                                        </td>
-                                        <td>Algèbre</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Analyse</td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="3">M4</td>
-                                        <td rowspan="3">MATHEMATIQUES
-                                        </td>
-                                        <td>Algorithmique</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Programmation C</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Programmation Python</td>
-                                    </tr>
-                                </div>
-                                {{-- semestre 2 --}}
-                                <div>
-                                    <tr>
-                                        <td class="" rowspan="10">Semestre 2
-                                        </td>
-                                        <td rowspan="3">M5</td>
-                                        <td rowspan="3">MATHS-INFO ET RESEAUX</td>
-                                        <td>Mathématique Appliquée</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Programmation Matlab</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Réseaux Informatiques</td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="2">M6</td>
-                                        <td rowspan="2">ARCHITECTURE DES SYSTEMES
-                                            EMBARQUÉS
-                                        </td>
-                                        <td>Architecture des Systèmes et Microprocesseurs
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Microcontrôleurs</td>
-                                    <tr>
-                                        <td rowspan="2">M7</td>
-                                        <td rowspan="2">AUTOMATISMES INDUSTRIELS
-                                        </td>
-                                        <td>Automatismes et API</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Capteurs et Actionneurs </td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="3">M8</td>
-                                        <td rowspan="3">ELECTRONIQUE ET INSTRUMENTATION
-                                        </td>
-                                        <td>Electronique Avancée</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Instrumentation Classique et Virtuelle</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Travaux de Réalisation</td>
-                                    </tr>
-                                </div>
-                                {{-- semestre 3  --}}
-                                <div>
-                                    <tr>
-                                        <td rowspan="9">Semestre 3
-                                        </td>
-                                        <td rowspan="2">M9</td>
-                                        <td rowspan="2">INFORMATIQUE EMBARQUÉE</td>
-                                        <td>Noyau Embarqué et Programmation Temps Réel</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Programmation Embarquée</td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="2">M10</td>
-                                        <td rowspan="2">TRAITEMENT DE L’INFORMATION
-                                        </td>
-                                        <td>Traitement de Signal</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Traitement d’Image</td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="2">M11</td>
-                                        <td rowspan="2">AUTOMATIQUE ET RESEAUX LOCAUX
-                                        </td>
-                                        <td>Automatique des Systèmes Linéaires</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Réseaux Locaux Industriels</td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="3">M12</td>
-                                        <td rowspan="3">PROGRAMMATION ET SECURITE DES SYSTEMES EMBARQUÉS
-                                        </td>
-                                        <td>Programmation Mobile</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Internet des Objet (Iot) et Technologie Web</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Introduction à La Sécurité des Systèmes Embarqués</td>
-                                    </tr>
-                                </div>
-                                {{-- semestre 4 --}}
-                                <div>
-                                    <tr>
-                                        <td class="" rowspan="7">Semestre 4
-                                        </td>
-                                        <td rowspan="3">M13</td>
-                                        <td rowspan="3">COMMUNICATION ET CULTURE DE L’ENTREPRISE</td>
-                                        <td>Culture de l’Entreprise</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Anglais</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tec et Pava</td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="2">M14</td>
-                                        <td rowspan="2">SYSTEME EMBARQUES AVANCES</td>
-                                        <td>Système Embarqué Automobile et Aéronautique</td>
-                                    </tr>
-                                    <tr>
-                                        <td>VHDL et FPGA</td>
-                                    </tr>
-                                    <tr>
-                                        <td>M15</td>
-                                        <td>PROJET DE FIN D’ÉTUDES</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>M16</td>
-                                        <td>STAGE DE FIN D’ETUDES</td>
-                                        <td></td>
-                                    </tr>
-                                </div>
+                                @foreach ($semestres as $semestre)
+                                    {{-- calc the N° of module with no matieres --}}
+                                    @php
+                                        $module_with_no_matiere = 0;
+                                    @endphp
+                                    @foreach ($semestre->modules as $module)
+                                        @if ($module->matieres->isEmpty())
+                                            @php
+                                                $module_with_no_matiere++;
+                                            @endphp
+                                        @endif
+                                    @endforeach
+                                    <div>
+                                        <tr>
+                                            <td class="text-capitalize"
+                                                rowspan="{{ count($semestre->matieres) + $module_with_no_matiere + 1 }}">
+                                                {{ $semestre->semestre_name }}
+                                            </td>
+                                        </tr>
+                                        @foreach ($semestre->modules as $module)
+                                            {{-- loop over the modules --}}
+                                            @php $first = true ; @endphp {{--   --}}
+                                            @if ($module->matieres->count() > 0)
+                                                @foreach ($module->matieres as $matiere)
+                                                    {{-- loop over matieres in each module --}}
+                                                    @if ($first)
+                                                        {{-- check if it's the first row in the module cuz has a deffirent struc --}}
+                                                        <tr>
+                                                            {{-- Module number --}}
+                                                            <td rowspan="{{ count($module->matieres) }}">
+                                                                M{{ $module->module_num }}</td>
+                                                            {{-- Module name --}}
+                                                            <td rowspan="{{ count($module->matieres) }}">
+                                                                {{ $module->module_name }}
+                                                            </td>
+                                                            {{-- name of first matiere in the module --}}
+                                                            <td>{{ $matiere->matiere_name }}</td>
+                                                        </tr>
+                                                        @php $first = false ; @endphp
+                                                    @else
+                                                        {{-- show the rest of the matieres --}}
+                                                        <tr>
+                                                            <td>{{ $matiere->matiere_name }}</td>
+                                                        </tr>
+                                                    @endif
+                                                @endforeach
+                                            @else
+                                                <tr>
+                                                    <td>M{{ $module->module_num }}</td>
+                                                    <td>{{ $module->module_name }}</td>
+                                                    <td></td>
+                                                </tr>
+                                            @endif
+                                        @endforeach
+                                    </div>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -515,7 +397,7 @@
 
                 <div class="section-title">
                     <h2>Débouchés</h2>
-                    <h3>Débouchés de la <span>fomation</span></h3>
+                    <h3>Débouchés de la <span>formation</span></h3>
                     <p></p>
                 </div>
 
@@ -579,33 +461,36 @@
                     <div class="row" data-aos="fade-up" data-aos-delay="100">
                         <div class="col-lg-12 d-flex justify-content-center">
                             <ul id="portfolio-flters">
-                                <li data-filter="*" class="filter-active">All</li>
-                                <li data-filter=".filter-arduino">Arduino</li>
-                                <li data-filter=".filter-ai">Ai</li>
-                                <li data-filter=".filter-web">Web</li>
+                                <li data-filter="*" class="filter-active">Tout</li>
+                                @foreach ($pfe_types as $pfe_type)
+                                    <li data-filter=".filter-{{ $pfe_type->type_name }}">{{ $pfe_type->type_name }}
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
 
                     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
                         @foreach ($pfe_exemples as $pfe_exemple)
-                            <div class="col-lg-4 col-md-6 portfolio-item {{ $pfe_exemple->filter_type }}">
+                            <div
+                                class="col-lg-4 col-md-6 portfolio-item @foreach (explode('|', $pfe_exemple->filter_type) as $key => $value){{ 'filter-' . $value }} @endforeach">
                                 <img src="{{ asset('storage/' . str_replace('public/', '', $pfe_exemple->image_path)) }}"
                                     class="img-fluid" alt="">
                                 <div class="portfolio-info ">
                                     <h4>{{ $pfe_exemple->name }}</h4>
                                     <p> {{ $pfe_exemple->description }} </p>
                                     <a href="{{ asset('storage/' . str_replace('public/', '', $pfe_exemple->image_path)) }}"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-                                        title="{{ $pfe_exemple->name }}"><i class="bi bi-arrows-fullscreen"></i></a>
-                                    <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                            class="bi bi-arrow-down"></i></a>
+                                        data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox preview-link fs-6 pe-1"
+                                        title="{{ $pfe_exemple->name }}"><i class="bi bi-arrows-angle-expand"></i>
+                                        Aperçu</a>
+                                    <a href="{{ route('view_pdf', ['pfe_exemple' => $pfe_exemple]) }}"
+                                        class="details-link fs-6" title="View Rapport"><i class="bi bi-eye-fill"></i>
+                                        Voir
+                                        le Rapport</a>
                                 </div>
                             </div>
                         @endforeach
-
-
-
                     </div>
                 </div>
             </section>
@@ -618,7 +503,7 @@
 
                 <div class="section-title">
                     <h2>Contact</h2>
-                    <h3><span>Contact Us</span></h3>
+                    <h3><span>Contactez-nous</span></h3>
                     <p></p>
                 </div>
 
@@ -626,7 +511,7 @@
                     <div class="col-lg-6">
                         <div class="info-box mb-4">
                             <i class="bi bi-geo-alt"></i>
-                            <h3>Our Address</h3>
+                            <h3>Notre adresse</h3>
                             <p>Ecole Supérieure de Technologie BP 2427 Route d’Imouzzer 30000 Fès</p>
                         </div>
                     </div>
@@ -657,26 +542,26 @@
                             <div class="row">
                                 <div class="col form-group">
                                     <input type="text" name="name" class="form-control" id="name"
-                                        placeholder="Your Name" required>
+                                        placeholder="Votre Nom" required>
                                 </div>
                                 <div class="col form-group">
                                     <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Your Email" required>
+                                        placeholder="Votre Email" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="Subject" required>
+                                    placeholder="Sujet" required>
                             </div>
                             <div class="form-group">
                                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                             </div>
                             <div class="my-3">
-                                <div class="loading">Loading</div>
+                                <div class="loading">Chargement en cours...</div>
                                 <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                                <div class="sent-message">Votre message a été envoyé. Merci !</div>
                             </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
+                            <div class="text-center"><button type="submit">Envoyer le message</button></div>
                         </form>
                     </div>
 

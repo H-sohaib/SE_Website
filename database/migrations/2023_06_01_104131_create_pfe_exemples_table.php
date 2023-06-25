@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('pfe_exemples', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->string('image_path');
             $table->string('pdf_path')->nullable();
             $table->string('filter_type');

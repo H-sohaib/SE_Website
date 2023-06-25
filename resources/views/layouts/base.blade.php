@@ -8,7 +8,7 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Favicons -->
-    <link href="{{ asset('assets/images/logo.png') }}" rel="icon">
+    <link href="{{ asset('assets/images/logo2.png') }}" rel="icon">
     {{-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> --}}
 
 
@@ -35,6 +35,7 @@
     <main>
         {{ $slot }}
     </main>
+    <x-my-linkedin></x-my-linkedin>
 
     <!-- Vendor JS Files -->
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>

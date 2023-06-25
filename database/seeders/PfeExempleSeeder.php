@@ -17,28 +17,44 @@ class PfeExempleSeeder extends Seeder
             [
                 'name' => 'test1',
                 'description' => 'ckbskuboyvquyvqouycez',
-                'image_path' => 'public/pfe_exemples/1.jpg',
-                'filter_type' => 'filter-app'
+                'image_path' => 'public/pfe_exemples/imgs/station2.jpg',
+                'pdf_path' => 'public/pfe_exemples/pdf/testpdf.pdf',
+                'filter_type' => 'Web'
             ],
             [
                 'name' => 'test2',
                 'description' => 'ckbskuboyvquyvqouycez',
-                'image_path' => 'public/pfe_exemples/1.jpg',
-                'filter_type' => 'filter-card'
+                'image_path' => 'public/pfe_exemples/imgs/station2.jpg',
+                'pdf_path' => 'public/pfe_exemples/pdf/testpdf.pdf',
+                'filter_type' => 'AI'
             ],
             [
                 'name' => 'test3',
                 'description' => 'ckbskuboyvquyvqouycez',
-                'image_path' => 'public/pfe_exemples/1.jpg',
-                'filter_type' => 'filter-web'
+                'image_path' => 'public/pfe_exemples/imgs/station2.jpg',
+                'pdf_path' => 'public/pfe_exemples/pdf/testpdf.pdf',
+                'filter_type' => 'AI'
             ],
             [
                 'name' => 'test4',
                 'description' => 'ckbskuboyvquyvqouycez',
-                'image_path' => 'public/pfe_exemples/1.jpg',
-                'filter_type' => 'filter-app'
+                'image_path' => 'public/pfe_exemples/imgs/station2.jpg',
+                'pdf_path' => 'public/pfe_exemples/pdf/testpdf.pdf',
+                'filter_type' => 'ESP32'
             ]
         ];
+        // $pfe = [
+        //     [
+        //         'name' => 'Suiveur Solaire Commande par IOT',
+        //         'description' => "Ce projet de fin d'études (PFE) vise à concevoir et à réaliser un suiveur
+        //         solaire commandé par l'Internet des objets (IoT) qui est constitué de 2 axes et qui suivre
+        //         automatiquement le soleil à l’aide des capteurs LDR, ou manuellement par l’utilisateur via le
+        //         tableau de bord d’une application IOT",
+        //         'image_path' => 'public/pfe_exemples/imgs/suiveur_solaire.jpg',
+        //         'pdf_path' => 'public/pfe_exemples/pdf/RapportPFE EDDOUCHE-HARRAOUI_FinalVersion.pdf',
+        //         'filter_type' => 'Arduino'
+        //     ],
+        // ];
 
         foreach ($pfe as $key => $pfe_exemple) {
             PfeExemple::create($pfe_exemple);
