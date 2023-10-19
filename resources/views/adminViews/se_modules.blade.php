@@ -163,6 +163,10 @@
         Si vous ajoutez un nouveau module dans le S1, S2 ou S3, le numéro du module aura l'air désordonné. Pour corriger
         cela, vous devrez mettre à jour manuellement le numéro du module
     </x-note>
+    <x-note>
+        En cas de mise à jour -> cliquez sur le bouton "Modifier" et renommez n'importe quel champ dans le tableau, une
+        fois terminé, cliquez sur le bouton "Mettre à jour" pour confirmer les changements.
+    </x-note>
 
     <x-slot name="script">
         <script src="{{ asset('assets/js/update_se_modules.js') }}"></script>

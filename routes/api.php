@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::patch('modules_update', [OrganisationModulaireController::class, 'update_all_modules']);
-Route::patch('matieres_update', [OrganisationModulaireController::class, 'update_all_matieres']);
+Route::post('modules_update', [OrganisationModulaireController::class, 'update_all_modules']);
+Route::post('matieres_update', [OrganisationModulaireController::class, 'update_all_matieres']);

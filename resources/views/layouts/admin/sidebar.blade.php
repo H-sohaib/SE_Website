@@ -11,18 +11,19 @@
 
             <a href="{{ route('admin.organisation_modulaire.index') }}"
                 class="list-group-item list-group-item-action py-2 ripple d-flex" aria-current="true">
-                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Gestion de la table des modules</span>
-            </a>
-
-            <a href="{{ route('admin.pfe_types.index') }}"
-                class="list-group-item list-group-item-action py-2 ripple d-flex" aria-current="true">
-                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Gestion des types de PFE</span>
+                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Table des modules</span>
             </a>
 
             <a href="{{ route('admin.pfe_exemples.index') }}" class="list-group-item list-group-item-action py-2 ripple"
                 aria-current="true">
-                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Gestion des PFE</span>
+                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Gestion des PFEs</span>
             </a>
+
+            <a href="{{ route('admin.pfe_types.index') }}"
+                class="list-group-item list-group-item-action py-2 ripple d-flex" aria-current="true">
+                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Gestion des types des PFEs</span>
+            </a>
+
             <a href="{{ route('admin.admin_management.index') }}"
                 class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
                 <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Gestion des admins</span>

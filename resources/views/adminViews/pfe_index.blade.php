@@ -79,5 +79,6 @@
         <script src="{{ asset('assets/js/glightbox.min.js') }}"></script>
         <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
         <script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
+        {{-- <script src="{{ asset('assets/js/modal.js') }}"></script> --}}
     </x-slot>
 </x-admin-layout>

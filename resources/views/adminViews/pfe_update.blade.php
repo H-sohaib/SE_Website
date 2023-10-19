@@ -38,18 +38,19 @@
                 <input name="pdf" type="file" class="form-control" id="customFile" />
                 <x-input-error :messages="$errors->get('pdf')" />
             </div>
+
             {{-- filter type  --}}
             @php
-                $types = explode('|', $pfe_exemple->filter_type);
+                $types = explode('|', $pfe_exemple->types);
+                
             @endphp
             <div class="col-7">
                 <label for="inputState" class="form-label">Type de PFE <span class="text-muted">(Vous pouvez
                         sélectionner plusieurs types)</span></label>
                 @foreach ($pfe_types as $pfe_type)
                     <div class="form-check">
-                        <input @checked(in_array($pfe_type->type_name, $types)) name="{{ $pfe_type->type_name }}"
-                            value="{{ $pfe_type->type_name }}" class="form-check-input" type="checkbox"
-                            id="flexCheckDefault" />
+                        <input @checked(in_array($pfe_type->type_name, $types)) name="filter_type[]" value="{{ $pfe_type->type_name }}"
+                            class="form-check-input" type="checkbox" id="flexCheckDefault" />
                         <label class="form-check-label" for="flexCheckDefault">{{ $pfe_type->type_name }}</label>
                     </div>
                 @endforeach

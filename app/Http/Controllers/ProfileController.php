@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileUpdateRequest;
+use App\Models\User;
+use App\Rules\MatchOldPassword;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -42,19 +44,24 @@ class ProfileController extends Controller
      */
     public function destroy(Request $request): RedirectResponse
     {
+        $admin = User::where('id', $request->id)->first();
+
         $request->validateWithBag('userDeletion', [
-            'password' => ['required', 'current_password'],
+            // 'password' => ['required', 'current_password'],
+            'password' => ['required', new MatchOldPassword($admin)],
         ]);
 
-        $user = $request->user();
+        if ($admin == auth()->user()) {
+            Auth::logout();
+            $admin->delete();
 
-        Auth::logout();
+            $request->session()->invalidate();
+            $request->session()->regenerateToken();
+            return Redirect::to('/');
+        }
 
-        $user->delete();
+        $admin->delete();
 
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
-
-        return Redirect::to('/');
+        return redirect()->back();
     }
 }

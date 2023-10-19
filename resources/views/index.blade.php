@@ -1,5 +1,18 @@
 <x-base-layout>
+    <x-slot name="style">
+        <style>
+            .drop-ul-margin-fix {
+                margin-left: 0px !important;
+            }
 
+            /* Large devices (desktops, 992px and up) */
+            @media (min-width: 992px) {
+                .drop-ul-margin-fix {
+                    margin-left: -100px !important;
+                }
+            }
+        </style>
+    </x-slot>
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center justify-content-between ps-3 pe-3">
         {{-- <div class="d-flex align-items-center justify-content-evenly"> --}}
@@ -473,21 +486,25 @@
                     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
                         @foreach ($pfe_exemples as $pfe_exemple)
                             <div
-                                class="col-lg-4 col-md-6 portfolio-item @foreach (explode('|', $pfe_exemple->filter_type) as $key => $value){{ 'filter-' . $value }} @endforeach">
-                                <img src="{{ asset('storage/' . str_replace('public/', '', $pfe_exemple->image_path)) }}"
-                                    class="img-fluid" alt="">
+                                class="col-lg-4 col-md-6 portfolio-item @foreach (explode('|', $pfe_exemple->types) as $key => $value){{ 'filter-' . $value }} @endforeach">
+                                <img src="{{ asset($pfe_exemple->image_path) }}" class="img-fluid" alt="">
                                 <div class="portfolio-info ">
                                     <h4>{{ $pfe_exemple->name }}</h4>
                                     <p> {{ $pfe_exemple->description }} </p>
-                                    <a href="{{ asset('storage/' . str_replace('public/', '', $pfe_exemple->image_path)) }}"
-                                        data-gallery="portfolioGallery"
+                                    <a href="{{ asset($pfe_exemple->image_path) }}" data-gallery="portfolioGallery"
                                         class="portfolio-lightbox preview-link fs-6 pe-1"
                                         title="{{ $pfe_exemple->name }}"><i class="bi bi-arrows-angle-expand"></i>
                                         Aperçu</a>
-                                    <a href="{{ route('view_pdf', ['pfe_exemple' => $pfe_exemple]) }}"
-                                        class="details-link fs-6" title="View Rapport"><i class="bi bi-eye-fill"></i>
-                                        Voir
-                                        le Rapport</a>
+
+
+                                    @if ($pfe_exemple->pdf_path)
+                                        <a href="{{ route('view_pdf', ['pfe' => $pfe_exemple]) }}"
+                                            class="details-link fs-6" title="View Rapport"><i
+                                                class="bi bi-eye-fill"></i>
+                                            Voir
+                                            le Rapport
+                                        </a>
+                                    @endif
                                 </div>
                             </div>
                         @endforeach

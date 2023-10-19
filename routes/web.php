@@ -4,7 +4,7 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\adminControllers\AdminController;
 use App\Http\Controllers\adminControllers\AdminManagementController;
 use App\Http\Controllers\adminControllers\OrganisationModulaireController;
-use App\Http\Controllers\adminControllers\PfeExemplesController;
+use App\Http\Controllers\adminControllers\PfeController;
 use App\Http\Controllers\adminControllers\PfeTypeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
@@ -25,11 +25,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', HomeController::class)->name('home');
 
 Route::post('sendEmail', [SendEmailController::class, 'send'])->name('sendEmail');
-Route::get('pfe_exemples/view_pdf/{pfe_exemple}',  [PfeExemplesController::class, 'view_pdf'])->name('view_pdf');
+Route::get('pfe_exemples/view_pdf/{pfe}',  [PfeController::class, 'view_pdf'])->name('view_pdf');
 
 Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(function () {
     Route::get('', AdminController::class)->name('index');
-    Route::resource('pfe_exemples', PfeExemplesController::class);
+    Route::resource('pfe_exemples', PfeController::class);
     Route::resource('pfe_types', PfeTypeController::class);
     Route::resource('organisation_modulaire', OrganisationModulaireController::class);
     Route::get('admin_management', [AdminManagementController::class, 'index'])

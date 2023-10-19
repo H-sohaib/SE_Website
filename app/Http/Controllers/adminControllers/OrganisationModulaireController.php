@@ -61,7 +61,7 @@ class OrganisationModulaireController extends Controller
                 'matiere_name' => $request->new_matiere
             ]);
         } else {
-            return redirect(route('admin.organisation_modulaire.index'))->with('error', 'ther is a error');
+            return redirect(route('admin.organisation_modulaire.index'))->with('error', 'there is a error !!');
         }
         return redirect(route('admin.organisation_modulaire.index'))->with('message', $request->add_what . 'a été créé avec succès');
     }
@@ -71,7 +71,7 @@ class OrganisationModulaireController extends Controller
      */
     public function show(string $id)
     {
-        //
+        abort(404);
     }
 
     /**
@@ -79,7 +79,7 @@ class OrganisationModulaireController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        abort(404);
     }
 
     /**
@@ -87,7 +87,7 @@ class OrganisationModulaireController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        abort(404);
     }
 
     /**

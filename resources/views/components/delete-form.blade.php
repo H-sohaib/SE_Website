@@ -1,7 +1,7 @@
 @props(['route', 'value'])
 
 
-<form class="m-0 p-0 d-inline" method="POST" action="{{ $route }}">
+<form onsubmit="confirmDelete(this , event)" class="m-0 p-0 d-inline" method="POST" action="{{ $route }}">
     @method('DELETE')
     @csrf
     @if ($value)

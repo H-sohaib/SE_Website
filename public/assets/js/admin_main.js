@@ -13,7 +13,7 @@ const select = (el, all = false) => {
 /**
  * Easy event listener function
  */
-const on = (type, el, listener, all = false) => {
+const onEvent = (type, el, listener, all = false) => {
     let selectEl = select(el, all);
     if (selectEl) {
         if (all) {
@@ -31,29 +31,29 @@ const onscroll = (el, listener) => {
     el.addEventListener("scroll", listener);
 };
 
-/**
- * Header fixed top on scroll
- */
-let selectHeader = select("#header");
-if (selectHeader) {
-    let headerOffset = selectHeader.offsetTop;
-    let nextElement = selectHeader.nextElementSibling;
-    const headerFixed = () => {
-        if (headerOffset - window.scrollY <= 0) {
-            selectHeader.classList.add("fixed-top");
-            nextElement.classList.add("scrolled-offset");
-        } else {
-            selectHeader.classList.remove("fixed-top");
-            nextElement.classList.remove("scrolled-offset");
-        }
-    };
-    window.addEventListener("load", headerFixed);
-    onscroll(document, headerFixed);
-}
+// /**
+//  * Header fixed top on scroll
+//  */
+// let selectHeader = select("#header");
+// if (selectHeader) {
+//     let headerOffset = selectHeader.offsetTop;
+//     let nextElement = selectHeader.nextElementSibling;
+//     const headerFixed = () => {
+//         if (headerOffset - window.scrollY <= 0) {
+//             selectHeader.classList.add("fixed-top");
+//             nextElement.classList.add("scrolled-offset");
+//         } else {
+//             selectHeader.classList.remove("fixed-top");
+//             nextElement.classList.remove("scrolled-offset");
+//         }
+//     };
+//     window.addEventListener("load", headerFixed);
+//     onscroll(document, headerFixed);
+// }
 /**
  * Mobile nav toggle
  */
-on("click", ".mobile-nav-toggle", function (e) {
+onEvent("click", ".mobile-nav-toggle", function (e) {
     select("#navbar").classList.toggle("navbar-mobile");
     this.classList.toggle("bi-list");
     this.classList.toggle("bi-x");
@@ -62,7 +62,7 @@ on("click", ".mobile-nav-toggle", function (e) {
 /**
  * Mobile nav dropdowns activate
  */
-on(
+onEvent(
     "click",
     ".navbar .dropdown > a",
     function (e) {

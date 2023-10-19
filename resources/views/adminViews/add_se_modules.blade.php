@@ -1,8 +1,4 @@
 <x-admin-layout>
-    <x-slot name="style">
-        <style>
-        </style>
-    </x-slot>
 
     <div class="section-title pb-0">
         <h3 class="mt-0"> Ajouter nouveau <span>module</span>/<span>matiere</span> </h3>

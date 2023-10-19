@@ -1,8 +1,8 @@
-let select = document.querySelector(".add-what");
+let selector = document.querySelector(".add-what");
 let module_fields = document.querySelectorAll(".module-field");
 let matiere_fields = document.querySelectorAll(".matiere-field");
 
-select.addEventListener("change", function (event) {
+selector.addEventListener("change", function (event) {
     if (this.value == "module") {
         // * remove disable on modules field
         module_fields.forEach(function (module_field) {
@@ -31,3 +31,11 @@ select.addEventListener("change", function (event) {
         });
     }
 });
+
+
+
+
+function confirmDelete(msg, button) {
+    if (!confirm(msg))
+        console.log(button.parentElement);
+}

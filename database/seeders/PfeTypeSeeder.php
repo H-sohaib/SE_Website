@@ -29,10 +29,10 @@ class PfeTypeSeeder extends Seeder
         // ];
         $pfe_types = [
             [
-                'type_name' => 'Arduino',
+                'type_name' => 'arduino',
             ],
             [
-                'type_name' => 'Web',
+                'type_name' => 'web',
             ],
         ];
 

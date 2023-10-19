@@ -70,14 +70,14 @@ submit.addEventListener("click", function () {
     let matieres_json = JSON.stringify(matieres);
     // send update for modules
     let ajax1 = $.ajax({
-        method: "PATCH",
+        method: "POST",
         url: `${url}/api/modules_update`,
         data: modules_json,
         contentType: "app/json",
     });
     // send update for matieres
     let ajax2 = $.ajax({
-        method: "PATCH",
+        method: "POST",
         url: `${url}/api/matieres_update`,
         data: matieres_json,
         contentType: "app/json",

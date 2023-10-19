@@ -42,24 +42,12 @@
                 @foreach ($pfe_types as $pfe_type)
                     <div class="form-check">
                         <input name="{{ $pfe_type->type_name }}" value="{{ $pfe_type->type_name }}"
-                            class="form-check-input" type="checkbox" id="flexCheckDefault" />
+                            class="form-check-input checkboxs" type="checkbox" required />
                         <label class="form-check-label" for="flexCheckDefault">{{ $pfe_type->type_name }}</label>
                     </div>
                 @endforeach
             </div>
 
-
-
-            {{-- 
-            <div class="col-6">
-                <label for="inputState" class="form-label">Type de PFE</label>
-                <select name="filter_type" class="form-select" required>
-                    <option value="" selected>choisir...</option>
-                    @foreach ($pfe_types as $pfe_type)
-                        <option value="{{ $pfe_type->type_name }}">{{ $pfe_type->type_name }}</option>
-                    @endforeach
-                </select>
-            </div> --}}
 
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Créer</button>
@@ -67,4 +55,22 @@
 
         </form>
     </div>
+
+    <x-slot name="style">
+        <script src="{{ asset('assets/js/jQuery-3.7.1.min.js') }}"></script>
+        <script>
+            $(function() {
+                var requiredCheckboxes = $('.checkboxs');
+                console.log(requiredCheckboxes);
+
+                requiredCheckboxes.change(function() {
+                    if (requiredCheckboxes.is(':checked')) {
+                        requiredCheckboxes.removeAttr('required');
+                    } else {
+                        requiredCheckboxes.attr('required', 'required');
+                    }
+                });
+            });
+        </script>
+    </x-slot>
 </x-admin-layout>

@@ -4,4 +4,5 @@
 </svg> --}}
 
 
-<img class="w-40" src="{{ asset('assets/images/logo.png') }}" alt="EST logo">
+<img style="width: 20% ; margin-left: auto ; margin-right: auto" src="{{ asset('assets/images/logo.png') }}"
+    alt="EST logo">

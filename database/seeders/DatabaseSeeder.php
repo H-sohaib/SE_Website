@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        $this->call(PfeExempleSeeder::class);
+        $this->call(PfeSeeder::class);
         $this->call(PfeTypeSeeder::class);
         $this->call(SemestreSeeder::class);
         $this->call(ModuleSeeder::class);

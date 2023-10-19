@@ -34,14 +34,24 @@
             .list-group-item:hover a i {
                 color: #fff;
             }
+
+            .edit {
+                cursor: pointer;
+                padding-left: 5px;
+            }
         </style>
     </x-slot>
     <ul class="list-group">
         @foreach ($pfe_types as $pfe_type)
             <div class="item list-group-item align-items-center pfe-types">
-                <li class="">{{ $pfe_type->type_name }}</li>
+                <li class="text-capitalize">{{ $pfe_type->type_name }}</li>
+
                 <div class="d-flex">
-                    <form class="m-0 p-0" method="POST"
+                    <a href="{{ route('admin.pfe_types.edit', ['pfe_type' => $pfe_type]) }}"><i
+                            class="bi bi-pencil-square edit"></i>
+                    </a>
+
+                    <form onsubmit="confirmDelete(this , event)" class="m-0 p-0" method="POST"
                         action="{{ route('admin.pfe_types.destroy', ['pfe_type' => $pfe_type]) }}">
                         @method('DELETE')
                         @csrf
@@ -49,6 +59,7 @@
                     </form>
                     {{-- <a href=""><i class="bi bi-pencil-square"></i></a> --}}
                 </div>
+
             </div>
         @endforeach
     </ul>
@@ -67,9 +78,7 @@
     </div>
 
     <x-note>
-        Si vous avez déjà ajouté des exemples de PFE, toute mise à jour ou
-        suppression d'un type nécessite de vous rendre dans les exemples de PFE et de mettre à jour le filtre
-        correspondant au type.
+        Lorsque vous supprimez un type, il disparaîtra de l'existence du PFE qui avait déjà ce type supprimé
     </x-note>
 
 </x-admin-layout>

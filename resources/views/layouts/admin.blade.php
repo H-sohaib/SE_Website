@@ -15,9 +15,9 @@
     <!-- Vendor CSS Files -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/bootstrap-icons.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/aos.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('assets/css/aos.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/glightbox.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/swiper-bundle.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/swiper-bundle.min.css') }}" rel="stylesheet"> --}}
     {{-- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"> --}}
     {{-- <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> --}}
 
@@ -26,6 +26,8 @@
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <!-- Template Main CSS File -->
     <link href="{{ asset('assets/css/adminSideBar.css') }}" rel="stylesheet">
+
+
     <!-- Page Heading -->
     @if (isset($style))
         {{ $style }}
@@ -33,7 +35,7 @@
 </head>
 
 <body>
-    <div class="">
+    <div>
 
         <div>
             <!--Main Navigation-->
@@ -54,6 +56,23 @@
             <!--Main layout-->
             <main style="margin-top: 58px;">
                 <div class="container pt-4">
+
+                    @if (session()->has('message'))
+                        <x-alert type="primary">
+                            {{ session()->get('message') }}
+                        </x-alert>
+                    @endif
+                    @if (session()->has('error'))
+                        <x-alert type="danger">
+                            {{ session()->get('error') }}
+                        </x-alert>
+                    @endif
+                    @if (session()->has('warning'))
+                        <x-alert type="warning">
+                            {{ session()->get('warning') }}
+                        </x-alert>
+                    @endif
+
                     <div class="bg-light border rounded-3 p-3 overflow-auto">
                         {{ $slot }}
                     </div>
@@ -84,6 +103,15 @@
         const glightbox = GLightbox({
             selector: ".glightbox",
         });
+
+
+        function confirmDelete(form, e) {
+            e.preventDefault();
+            if (confirm('Are you sure u want to delete this !'))
+                form.submit()
+
+
+        }
     </script>
 </body>
 

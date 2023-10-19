@@ -20,7 +20,12 @@
     <link href="{{ asset('assets/css/app_layout.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    <link rel="stylesheet" href="{{ asset('build/assets/app-a46e077c.css') }}">
+    <script src="{{ asset('build/assets/app-da59565c.js') }}"></script>
+
+
 </head>
 
 <body class="font-sans antialiased">
